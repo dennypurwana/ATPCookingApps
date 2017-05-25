@@ -22,10 +22,46 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".view.LoginActivity" android:theme="@style/AppTheme.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name=".view.LoginActivity" android:theme="@style/AppTheme.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden">
+
+        </activity>
         <activity android:name=".view.RegisterActivity" android:theme="@style/AppTheme.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden"/>
         <activity android:name=".view.DashboardActivity" android:theme="@style/AppTheme.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name=".view.ListMenuMakananActivity" android:theme="@style/AppTheme.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".view.DashboardActivity" />
+        </activity>
 
+        <activity android:name=".view.ListNotificationActivity" android:theme="@style/AppTheme.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".view.DashboardActivity" />
+        </activity>
+
+        <activity android:name=".view.ListPromoActivity" android:theme="@style/AppTheme.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".view.DashboardActivity" />
+        </activity>
+
+        <activity android:name=".view.ListTableRestoActivity" android:theme="@style/AppTheme.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".view.DashboardActivity" />
+        </activity>
+
+        <activity android:name=".view.ListUserActivity" android:theme="@style/AppTheme.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".view.DashboardActivity" />
+        </activity>
+
+        <activity android:name=".view.ReportActivity" android:theme="@style/AppTheme.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".view.DashboardActivity" />
+        </activity>
     </application>
 
 </manifest>

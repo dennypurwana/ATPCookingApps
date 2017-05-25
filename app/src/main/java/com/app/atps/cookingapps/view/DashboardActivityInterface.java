@@ -6,7 +6,12 @@ package com.app.atps.cookingapps.view;
 
 public interface DashboardActivityInterface  {
     interface View{
-
+            void toListMenuMakananPage();
+            void toUsersPage();
+            void toTableRestaurantPage();
+            void toReportSummaryPage();
+            void toPromotionPage();
+            void toListNotificationPage();
     }
     interface Presenter{
 
