@@ -9,7 +9,14 @@ public class User {
     private String tipeUser;
     private String nama;
     private String password;
+    private String phone;
 
+    public String getPhone() {
+        return phone;
+    }
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
     public String getIdUser() {
         return idUser;
     }
