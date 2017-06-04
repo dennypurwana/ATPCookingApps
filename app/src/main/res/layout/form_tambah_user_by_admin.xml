@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <include layout="@layout/toolbar"/>
+
+        <TableLayout
+            android:id="@+id/tableMenu"
+            android:layout_marginTop="70dp"
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TableRow>
+            <RelativeLayout
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp">
+                <ImageView
+                    android:id="@+id/imageMenu"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/icon_person" />
+            </RelativeLayout>
+
+            <RelativeLayout android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/labelMenu"
+                    android:layout_marginLeft="10dp"
+                    android:text="username"/>
+                <EditText
+                    android:layout_below="@+id/labelMenu"
+                    android:id="@+id/edTextUsername"
+                    android:layout_width="match_parent"
+                    android:inputType="textNoSuggestions"
+                    android:padding="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:hint="" />
+            </RelativeLayout>
+
+
+
+        </TableRow>
+            <TableRow>
+                <RelativeLayout
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp">
+                    <ImageView
+                        android:id="@+id/imageKeterangan"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/icon_email" />
+                </RelativeLayout>
+
+                <RelativeLayout android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/labelKeterangan"
+                        android:layout_marginLeft="10dp"
+                        android:text="email"/>
+                    <EditText
+                        android:layout_below="@+id/labelKeterangan"
+                        android:id="@+id/edTextEmail"
+                        android:inputType="textNoSuggestions|textMultiLine"
+                        android:layout_width="match_parent"
+                        android:padding="10dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="1"
+                        android:hint="" />
+                </RelativeLayout>
+
+            </TableRow>
+
+            <TableRow>
+                <RelativeLayout
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp">
+                    <ImageView
+                        android:id="@+id/imageKategori"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/icon_phone" />
+                </RelativeLayout>
+
+                <RelativeLayout android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/labelKategori"
+                        android:layout_marginLeft="10dp"
+                        android:text="Telephone"/>
+                    <EditText
+                        android:layout_below="@+id/labelKategori"
+                        android:id="@+id/edTextPhone"
+                        android:layout_width="match_parent"
+                        android:padding="10dp"
+                        android:inputType="textNoSuggestions"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="1"
+                        android:hint="" />
+                </RelativeLayout>
+
+
+            </TableRow>
+            <TableRow>
+                <RelativeLayout
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                   >
+                    <ImageView
+                        android:id="@+id/imageStok"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/icon_password" />
+                </RelativeLayout>
+
+                <RelativeLayout android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/labelStok"
+                        android:layout_marginLeft="10dp"
+                        android:text="Password"/>
+                    <EditText
+                        android:layout_below="@+id/labelStok"
+                        android:id="@+id/edTextPassword"
+                        android:layout_width="match_parent"
+                        android:padding="10dp"
+                        android:inputType="textNoSuggestions|number"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="1"
+                        android:hint="" />
+                </RelativeLayout>
+
+
+
+            </TableRow>
+            <!--<TableRow>-->
+
+                <!--<RelativeLayout android:layout_weight="1"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content">-->
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:id="@+id/labelUserType"-->
+                        <!--android:layout_marginLeft="30dp"-->
+                        <!--android:text="Select Usertype"/>-->
+                    <!--<Spinner-->
+                        <!--android:layout_below="@+id/labelUserType"-->
+                        <!--android:id="@+id/spinnerUsertype"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:entries="@array/gender"-->
+                        <!--android:prompt="@string/gender_prompt"-->
+                        <!--android:layout_weight="1" />-->
+                <!--</RelativeLayout>-->
+            <!--</TableRow>-->
+
+            <TableRow>
+                <RelativeLayout android:layout_width="0dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/btnSimpanUser"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Simpan"
+                    android:textColor="@color/white"
+                    android:backgroundTint="@color/colorPrimaryDark"/>
+                </RelativeLayout>
+            </TableRow>
+        </TableLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content">
+            <ProgressBar
+                android:id="@+id/progress"
+                android:layout_marginTop="10dp"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:indeterminateTint="@color/colorPrimaryDark"
+                android:indeterminateTintMode="src_in"
+                android:visibility="gone"
+                />
+            <TextView
+                android:id="@+id/titleProgress"
+                android:layout_below="@+id/progress"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:visibility="gone"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/logoApps"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="@drawable/image_home"
+            >
+            <TextView
+                android:id="@+id/titleApps"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fooder"
+                android:textSize="36dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_centerInParent="true"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:id="@+id/subTitleApps"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-Food Order-"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_below="@+id/titleApps"
+                android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:background="@color/colorPrimary"
+            android:layout_height="60dp"
+            android:layout_below="@+id/logoApps"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/layoutButtonMenu">
+            <ImageView
+                android:id="@+id/imageFood"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_food"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Food and Baverage"
+               android:layout_toRightOf="@+id/imageFood"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:textColor="@color/white"
+                android:textSize="24dp"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:background="@color/colorPrimary"
+            android:layout_height="60dp"
+            android:layout_below="@+id/layoutButtonMenu"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/layoutButtonListPromo">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="40dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_info"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Promo"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textColor="@color/white"
+                android:textSize="24dp"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:background="@color/colorPrimary"
+            android:layout_height="60dp"
+            android:layout_below="@+id/layoutButtonListPromo"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/layoutButtonListOrder">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="40dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/waiters_icon"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="List Order"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textColor="@color/white"
+                android:textSize="24dp"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>

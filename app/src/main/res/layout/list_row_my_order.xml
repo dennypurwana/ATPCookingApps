@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/row_layout"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/viewImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/imageMenuMakanan"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/burger_image"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/viewContent"
+            android:layout_toRightOf="@id/viewImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/titleMenuMakanan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#512816"
+                android:text="Burger Deluxe"
+                android:paddingRight="20dp"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:id="@+id/tipeMenuMakanan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#512816"
+                android:paddingRight="20dp"
+                android:text="Burger Deluxe"
+                android:textSize="10dp"
+                android:layout_below="@+id/titleMenuMakanan"/>
+            <TextView
+                android:id="@+id/hargaMenuMakanan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#512816"
+                android:paddingRight="20dp"
+                android:text="Rp.20000"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/tipeMenuMakanan"/>
+           <TextView
+               android:id="@+id/labelKeterangan"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="keterangan"
+               android:textSize="10sp"
+               android:layout_marginTop="5dp"
+               android:layout_below="@+id/hargaMenuMakanan"/>
+            <TextView
+                android:id="@+id/keteranganOrder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="12sp"
+                android:textColor="#000000"
+                android:layout_below="@+id/labelKeterangan"/>
+
+            <TextView
+                android:id="@+id/totalOrder"
+                android:layout_below="@+id/keteranganOrder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:textStyle="bold"
+                android:text=""
+                android:textColor="@color/colorPrimaryDark"/>
+
+
+
+        </RelativeLayout>
+
+        <!--<TextView-->
+            <!--android:id="@+id/addMakanan"-->
+            <!--android:visibility="visible"-->
+            <!--android:layout_width="40dp"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:text="add"-->
+            <!--android:textStyle="bold"-->
+            <!--android:textColor="@color/colorPrimaryDark"-->
+            <!--/>-->
+
+
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#9E9E9E"
+            android:layout_below="@+id/viewContent"></LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
