@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">ATPCookingApps</string>
+    <string-array name="categori">
+        <item>desert</item>
+        <item>food</item>
+        <item>beverage</item>
+    </string-array>
+    <string-array name="urutkan">
+    <item>meja</item>
+    <item>date</item>
+</string-array>
 </resources>

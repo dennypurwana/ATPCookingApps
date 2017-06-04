@@ -6,11 +6,12 @@ android {
     buildToolsVersion "25.0.2"
     defaultConfig {
         applicationId "com.app.atps.cookingapps"
-        minSdkVersion 18
+        minSdkVersion 17
         targetSdkVersion 25
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
     }
     buildTypes {
         release {

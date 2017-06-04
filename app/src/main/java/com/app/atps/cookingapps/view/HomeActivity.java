@@ -68,7 +68,7 @@ public class HomeActivity extends AppCompatActivity implements HomeActivityInter
 
     @OnClick(R.id.layoutButtonChef)
     public void toChefPage() {
-        Intent intent=new Intent(HomeActivity.this,LoginActivity.class);
+        Intent intent=new Intent(HomeActivity.this,ListOrderGuestActivity.class);
         intent.putExtra("userType","CHEF");
         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
@@ -76,7 +76,13 @@ public class HomeActivity extends AppCompatActivity implements HomeActivityInter
     }
 
     @Override
+    @OnClick(R.id.layoutButtonGuest)
     public void toGuestPage() {
+        Intent intent=new Intent(HomeActivity.this,HomeGuestActivity.class);
+        intent.putExtra("userType","GUEST");
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        startActivity(intent);
 
     }
 }

@@ -8,8 +8,13 @@ public interface LoginActivityInterface {
     interface View{
         void toRegisterPage();
         void toDashboardPage();
+        void submit();
+        void resultLogin(boolean status);
+        void resultError(String message);
+        void showProgress();
+        void hideProgress();
     }
     interface Presenter{
-
+        void getUserByEmailPassword(String email,String password);
     }
 }

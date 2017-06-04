@@ -6,17 +6,28 @@ package com.app.atps.cookingapps.model;
 
 public class Meja {
     private String idMeja;
-    private String meja;
+    private String namaMeja;
+    private String jumlahKursi;
     public String getIdMeja() {
         return idMeja;
     }
     public void setIdMeja(String idMeja) {
         this.idMeja = idMeja;
     }
-    public String getMeja() {
-        return meja;
+
+    public String getNamaMeja() {
+        return namaMeja;
     }
-    public void setMeja(String meja) {
-        this.meja = meja;
+
+    public void setNamaMeja(String namaMeja) {
+        this.namaMeja = namaMeja;
+    }
+
+    public String getJumlahKursi() {
+        return jumlahKursi;
+    }
+
+    public void setJumlahKursi(String jumlahKursi) {
+        this.jumlahKursi = jumlahKursi;
     }
 }

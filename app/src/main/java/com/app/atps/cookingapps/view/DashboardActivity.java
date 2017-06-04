@@ -71,7 +71,7 @@ public class DashboardActivity extends AppCompatActivity implements DashboardAct
     @Override
     @OnClick(R.id.btnToReportSummary)
     public void toReportSummaryPage() {
-        Intent intent=new Intent(DashboardActivity.this,ReportActivity.class);
+        Intent intent=new Intent(DashboardActivity.this,ReportListAdminActivity.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(intent);

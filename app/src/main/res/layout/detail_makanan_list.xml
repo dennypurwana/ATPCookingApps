@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/toolbar"/>
+    <ImageView
+        android:id="@+id/imageMenuMakanan"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/burger_image"/>
+    <TextView
+        android:id="@+id/labelMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/imageMenuMakanan"
+        android:text="nama menu"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="20dp"
+        android:paddingRight="20dp"
+        android:textSize="14dp"
+        android:textColor="#000000"
+        android:textStyle="normal"/>
+    <TextView
+        android:id="@+id/menuMakanan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/imageMenuMakanan"
+        android:layout_below="@+id/labelMenu"
+        android:text="Ayam Rica"
+        android:layout_marginLeft="20dp"
+        android:paddingRight="20dp"
+        android:textSize="18dp"
+        android:textColor="#000000"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/labelDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageMenuMakanan"
+        android:text="spesifikasi"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:paddingRight="20dp"
+        android:textSize="14dp"
+        android:textColor="#000000"
+        android:textStyle="normal"/>
+    <TextView
+        android:id="@+id/spesifikasiMakanan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/labelDetail"
+        android:text="djasdjlskdjakls dksldjslaj"
+        android:layout_marginLeft="20dp"
+        android:paddingRight="20dp"
+        android:textSize="18dp"
+        android:textColor="#000000"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/labelHarga"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spesifikasiMakanan"
+        android:text="harga"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:paddingRight="20dp"
+        android:textSize="14dp"
+        android:textColor="#000000"
+        android:textStyle="normal"/>
+    <TextView
+        android:id="@+id/hargaMakanan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/labelHarga"
+        android:text="djasdjlskdjakls dksldjslaj"
+        android:layout_marginLeft="20dp"
+        android:paddingRight="20dp"
+        android:textSize="18dp"
+        android:textColor="#000000"
+        android:textStyle="bold"/>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btnDelete"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/hargaMakanan"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="30dp"
+        android:textColor="@color/white"
+        android:text="Delete"
+        android:backgroundTint="#E53935"/>
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btnEdit"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/hargaMakanan"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:textColor="@color/white"
+        android:text="Edit"
+        android:backgroundTint="#01579B"/>
+
+</RelativeLayout>

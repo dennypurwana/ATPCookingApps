@@ -1,10 +1,13 @@
 package com.app.atps.cookingapps.model;
 
+import java.io.Serializable;
+
 /**
  * Created by emerio on 5/24/17.
  */
 
-public class MenuMakanan {
+
+public class MenuMakanan implements Serializable{
     private String idMenuMakanan;
     private String nama;
     private String stok;
@@ -12,7 +15,30 @@ public class MenuMakanan {
     private String harga;
     private String idKategori;
     private String imageMenu;
+    private boolean isChecked;
 
+    public boolean isChecked() {
+        return isChecked;
+    }
+
+    public void setChecked(boolean checked) {
+        isChecked = checked;
+    }
+
+    private int totalOrder;
+    public int getTotalOrder() {
+        return totalOrder;
+    }
+    public void setTotalOrder(int totalOrder) {
+        this.totalOrder = totalOrder;
+    }
+    public String getNotes() {
+        return notes;
+    }
+    public void setNotes(String notes) {
+        this.notes = notes;
+    }
+    private String notes;
     public String getIdMenuMakanan() {
         return idMenuMakanan;
     }
